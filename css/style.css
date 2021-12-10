@@ -1,0 +1,708 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Maven Pro', sans-serif;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+@keyframes header-animacija {
+    from {top: -500px; opacity: 0;}
+    to {top: 0px; opacity: 1;}
+}
+
+	/**********HOME**********/
+
+.home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../img/background.jpg);
+    background-size: cover;
+	background-position: center;
+    height: 100vh;
+	width: 100%;
+}
+.home header{
+    padding: 6vh;
+    text-align: right;
+    color: white;
+    font-size: 14px;
+}
+.home header h2{
+	font-size: 26px;
+    color: yellow;
+}
+.home header span{
+    color:yellow;
+}
+.home div{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    text-align: center;
+}
+.home div h1{
+    text-align: center;
+    color: white;
+    font-size: 62px;
+    padding: 5px;
+    margin: 20px 0px 20px;
+}
+.home div h1 span{
+    font-size: 88px;
+    color:yellow;
+	position: relative;
+	animation-name: header-animacija;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+.home div h2{
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 51vh;
+    padding-left: 12vh;
+    padding-right: 12vh;   
+}
+.logo-nav{
+	width: auto;
+	cursor: pointer;
+	transition: transform .4s;
+}
+.logo-nav:hover{
+	transform: scale(1.2);
+}
+.logo{
+	width: auto;
+	height: 210px;
+	cursor: pointer;
+	transition: transform .4s;
+}
+.logo:hover{
+	transform: scale(1.2);
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 15px  30px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+	font-size: 18px;
+}
+nav ul li a:hover{
+	color:rgb(255, 255, 0);
+	transition: .4s;
+}
+.button1{
+	background-color:rgb(255, 255, 0);
+	color: black;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+	font-size: 18px;
+}
+.button1:hover{
+	transform: scale(1.2);
+}
+.topbtn{
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	bottom: 20px;
+	right: 20px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 22px;
+	border-radius: 50%;
+	border: 3px solid rgb(255, 255, 0);
+	cursor: pointer;
+	color:rgb(255, 255, 0);
+	transition: .4s;
+	z-index: 1;
+}
+.topbtn:hover{
+	background-color:rgb(255, 255, 0);
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 30px;
+	border: 3px solid black;
+}
+
+	/**********USLUGE**********/
+
+.usluge{
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title-usluge h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 0 auto;
+	text-align: center;
+    padding-bottom: 30px;
+}
+.title-usluge h2 span{
+	color: rgb(255, 255, 0);
+	font-size: 75px;
+	width: 1130px;
+	margin: 0 auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 500px;	
+}
+.card{
+	height: 400px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 40px;
+	margin: 25px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card img{
+	height: 130px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border-radius: 50%;
+}
+.text-usluge p{
+	color: white;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+h5{
+	color: rgb(255, 255, 0);
+	font-size: 23px;
+	margin-bottom: 35px;
+}
+.button2{
+	background-color:rgb(255, 255, 0);
+	color: black;
+	text-decoration: none;
+	border: 3px solid transparent;
+	font-weight: bold;
+	padding: 15px 50px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.button2:hover{
+	background-color: transparent;
+	border: 3px solid rgb(255, 255, 0);
+	cursor: pointer;
+	color:rgb(255, 255, 0)
+}
+
+	/**********O NAMA**********/
+
+.about{
+	width: 100%;
+	padding-bottom: 150px;
+}
+.about img{
+	height: auto;
+	width: 500px;
+	border-radius: 20px;
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 1200px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border: 3px solid rgb(255, 255, 0);
+	border-radius: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background: black;
+	opacity: 0.9;
+}
+.about h2{
+	color: white;
+	font-size: 75px;
+	margin-bottom: 20px;
+	text-align: center;
+	padding-bottom: 60px;
+}
+.about-text p{
+	color: white;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 16px;
+	margin-bottom: 45px;
+	padding-top: 50px;
+}
+.bodi{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(../img/bgmain.jpg);
+}
+
+/**********GALERIJA**********/
+
+.galerija{
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+.galerija ul {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	list-style:none;
+	width:955px;
+	height:450px;
+	border-radius:3px;
+	overflow:hidden;
+	box-shadow:1px 1px 3px 1px;
+}
+.galerija  li {
+	position:relative;
+	width:190px;
+	height:450px;
+	float:left;
+	border-left:1px solid white;
+	transition:all 0.7s;
+	box-shadow:-2px 0 10px 2px;
+}
+.galerija  ul li:first-child {
+	border:none;
+}
+.galerija-span {
+	display:block;
+	position:absolute;
+	bottom:0;
+	width:50%;
+	color:white;
+	white-space:nowrap;
+	padding:20px;
+  	background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+}
+.galerija  img {
+	width:800px;
+	height:450px;
+}
+.galerija ul:hover li {
+	width:50px;  
+}
+.galerija ul li:hover {
+	width:750px;
+}
+.galerija h2{
+	color: white;
+	font-size: 75px;
+	text-align: center;
+}
+.galerija-span-h{
+	color: yellow;
+}
+
+
+/**********FOOTER**********/
+
+.footer{
+
+	height: 50px;
+	float: left;
+	width: 25%;
+	margin-left: 70px;
+}
+.footer-p{
+	padding-top: 13px;
+	color:white;
+}
+.footer p{
+	text-align: center;
+	font-size: 13px;
+	color:white;
+}
+.footer h4{
+	text-align: center;
+	padding: 10px;
+	color:yellow;
+}
+.footer-drustvene{
+	height: 50px;
+	float: left;
+	width: 25%;
+}
+.footer-logo{
+	height: 50px;
+	float: left;
+	width: 100px;
+	margin-right: 20px;
+	margin-left: 30px;
+	cursor: pointer;
+}
+.footer-drustvene a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  rgb(255, 255, 0);
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	float: left;
+}
+.footer-drustvene a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+footer{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9));
+	border-top: 3px solid yellow;
+	border-left: 3px solid yellow;
+	border-right: 3px solid yellow;
+	height: 100px;
+	width: 100%;
+	border-top-left-radius: 60px ;
+	border-top-right-radius: 60px;
+}
+.footer-copy{
+	position: absolute;
+    margin-top: 78px;
+    margin-left: 42%;
+    color: yellow;
+	font-size: 12px;
+}
+
+	/**********O AUTORU**********/
+
+.o-text{
+	width: 550px;
+}
+.o-text p{
+	color: white;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 16px;
+	margin-bottom: 45px;
+	padding-top: 50px;
+	width: 550px;
+}
+.about-me {
+	width: 100%;
+	padding-bottom: 100px;
+}
+.about-me img{
+	height: 450px;
+	width: auto;
+	border-radius: 20px;
+	padding: 15px;
+	border: 3px solid rgb(255, 255, 0);
+}
+.about-text{
+	width: 550px;
+}
+.main-me{
+	width: 900px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background: black;
+	opacity: 0.9;
+}
+.about-me h2{
+	color: white;
+	font-size: 75px;
+	margin-bottom: 20px;
+	text-align: center;
+	padding-bottom: 60px;
+	padding-top: 50px;
+}
+.about-me-text p{
+	color: white;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 16px;
+	margin-bottom: 45px;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+.about-me-text h5{
+	font-size: 25px;
+	text-align: center;
+}
+
+/**********KONTAKT**********/
+
+.body-kontakt{
+	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/abstractb2.jpg);
+    background-size: cover;
+}
+.kontakt-body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+.kontakt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+.info i{
+    margin-right: 20px;
+    font-size: 25px;
+    color: yellow;
+}
+.forma{
+    max-width: 700px;
+    margin-right: 0 auto;
+}
+.info, .forma{
+    flex: 1;
+}
+.forma h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.forma span{
+    color: yellow;
+}
+.forma .text-box{
+    background: #000;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 0);
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.95;
+}
+.forma .text-box:first-child{
+    margin-right: 15px;
+}
+.forma textarea{
+    background: #000;
+    color: #fff;
+	border: 2px solid rgb(255, 255, 0);
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.95;
+}
+.forma .send-button{
+    float: right;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color:rgb(255, 255, 0);
+	color: black;
+	text-decoration: none;
+	border: 3px solid transparent;
+	font-weight: bold;
+	border-radius: 30px;
+	transition: .5s; 
+}
+.forma .send-button:hover{
+    background-color: transparent;
+    border: 3px solid rgb(255, 255, 0);
+    cursor: pointer;
+    color:rgb(255, 255, 0)
+}
+.email-box{
+    background: #000;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 0);
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    height: 50px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.95;
+}
+.nav-kontakt{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 5px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+/**********CENOVNIK**********/
+
+.body-cenovnik{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../img/abstractb1.jpg);
+	background-size: contain;
+}
+.cenovnik{
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	padding-top: 30px;
+}
+.title-cenovnik h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 0 auto;
+	text-align: center;
+    padding-bottom: 30px;
+}
+.title-usluge h2 span{
+	color: rgb(255, 255, 0);
+	font-size: 75px;
+	width: 1130px;
+	margin: 0 auto;
+	text-align: center;
+}
+.box-c{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 500px;	
+	padding-bottom: 80px;
+}
+.card-c{
+	height: 400px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 40px;
+	margin: 25px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+    border: 3px solid yellow;
+}
+.text-cenovnik p{
+	color: white;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card-pakets {
+	height: 800px;
+	width: 400px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 40px;
+	margin: 25px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+    border: 3px solid silver;
+    line-height: 30px;
+}
+.card-paketg {
+	height: 800px;
+	width: 400px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 40px;
+	margin: 25px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+    border: 3px solid goldenrod;
+    line-height: 30px;
+}
+.card-paketd {
+	height: 800px;
+	width: 400px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 40px;
+	margin: 25px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+    border: 3px solid lightblue;
+    line-height: 30px;
+}
+.silver, .silver p{
+    color:silver;
+}
+.gold,.gold p{
+    color: goldenrod;
+}
+.diamond, .diamond p{
+    color: lightblue;
+}
+.hsilver{
+    color:silver;
+    font-size: 28px;
+	margin-bottom: 35px;
+}
+.hgold{
+    color:goldenrod;
+    font-size: 28px;
+	margin-bottom: 35px;
+}
+.hdiamond{
+    color:lightblue;
+    font-size: 28px;
+	margin-bottom: 35px;
+}
